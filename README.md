@@ -26,4 +26,4 @@ The project is part of research in the [Symbiotic Engineering Analysis (SEA) Lab
 
 **License**
 
-This project is released open-source under the MIT License. The hydrodynamics data was generated from WAMIT and WEC-Sim, which is publicly available.
+This project is released open-source under the MIT License. The hydrodynamics data was generated from NEMOH, which is publicly available.

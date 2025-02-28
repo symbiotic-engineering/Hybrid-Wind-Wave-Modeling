@@ -16,7 +16,7 @@ The project is part of research in the [Symbiotic Engineering Analysis (SEA) Lab
 **File Structure**
 - `geometry`: Contains the geometry files for visualization.
 - `hydroData`: Contains the file for hydrodynamics coefficients in a .h5 extension. The file is generated using `bemio.m`.
-- `Mooring`: Contains the file needed as input for MoorDyn. 
+- `Mooring`: Contains the file needed as input for **MoorDyn**. 
 - `mostData`: Contains **MOST** code to model the aerodynamics and electrical generator for the FWT.
 
 

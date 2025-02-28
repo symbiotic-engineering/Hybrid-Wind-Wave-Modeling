@@ -1,0 +1,44 @@
+Mooring line data file for MoorDyn in libmoordyn.dll
+----------------------- LINE TYPES ------------------------------------------
+Name     Diam      MassDen       EA    BA/-zeta    EI    Cd      Ca     CdAx   CaAx
+(-)       (m)      (kg/m)        (N)    (N-s/-)    (-)   (-)     (-)    (-)    (-)
+main     0.09      77.7066   384.243E6  -0.8       0.0   1.6     1.0    0.1    0.0
+---------------------------- BODIES -----------------------------------------------------
+ID   Attachment  X0     Y0    Z0     r0      p0     y0     Mass  CG*   I*      Volume   CdA*   Ca
+(#)     (-)      (m)    (m)   (m)   (deg)   (deg)  (deg)   (kg)  (m)  (kg-m^2)  (m^3)   (m^2)  (-)
+1       Coupled     0    0    -89.915    0       0      0     0.0   0    0         0       0      0
+---------------------- POINTS --------------------------------
+ID     Attachment  X        Y         Z      M      V    CdA   CA
+(-)     (-)      (m)      (m)      (m)     (kg)  (m^3) (m^2)  (-)
+1      fixed    853.87    0.0     -320.0    0     0      0     0
+2      fixed   -426.94   739.47   -320.0    0     0      0     0
+3      fixed   -426.94  -739.47   -320.0    0     0      0     0
+4      Body1     5.2      0.0     -70.0     0     0      0     0
+5      Body1    -2.6      4.5     -70.0     0     0      0     0
+6      Body1    -2.6     -4.5     -70.0     0     0      0     0
+---------------------- LINES --------------------------------------
+ID      LineType   AttachA   AttachB  UnstrLen  NumSegs   Outputs
+(-)       (-)        (-)       (-)       (m)       (-)      (-)
+1         main       1         4        902.2      20       tps
+2         main       2         5        902.2      20       tps
+3         main       3         6        902.2      20       tps
+---------------------- SOLVER OPTIONS ---------------------------------------
+0.0005   dtM          - time step to use in mooring integration
+0        WaveKin      - wave kinematics flag (0=neglect, the only option currently supported)
+3.0e6    kBot         - bottom stiffness
+3.0e5    cBot         - bottom damping
+320      WtrDpth      - water depth
+5.0      CdScaleIC    - factor by which to scale drag coefficients during dynamic relaxation IC gen
+0.001    threshIC     - threshold for IC con
+60.0     TmaxIC       - max time for ic gen (s)
+2        writeLog     - Write a log file
+0        WriteUnits   - 0: do not write the units header on the output files
+------------------------ OUTPUTS --------------------------------------------
+FairTen1
+FairTen2
+FairTen3
+AnchTen1
+AnchTen2
+AnchTen3
+END
+------------------------- need this line --------------------------------------
